@@ -1,0 +1,14 @@
+{
+  "name": "protein-engineering-nlp-benchmark",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --remote --open",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "3dmol": "^2.5.5",
+    "@slidev/cli": "^51.0.0",
+    "@slidev/theme-default": "latest"
+  }
+}

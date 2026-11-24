@@ -1,0 +1,84 @@
+/* Global Slidev styles & print/viewport fitting (Light Theme) */
+aside,
+.slidev-layout + nav,
+.sidebar,
+.slidev-toc,
+#slidev-goto-dialog {
+  display: none !important;
+}
+
+.slidev-layout {
+  max-width: 100% !important;
+  padding: 2.25rem 3.25rem !important;
+  font-size: 0.92rem !important;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+/* The title keeps its natural height when the slide is centred */
+.slidev-layout > h1 {
+  flex: none !important;
+}
+
+.slidev-layout h1 {
+  font-size: 2.1rem !important;
+  line-height: 2.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.015em !important;
+  margin-bottom: 0.35rem !important;
+  margin-top: 0 !important;
+  color: #0f172a !important;
+}
+
+.slidev-layout h1 + p {
+  margin-top: 0 !important;
+  margin-bottom: 0.65rem !important;
+  font-size: 0.95rem !important;
+  line-height: 1.4rem !important;
+  color: #475569 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+
+.slidev-layout h3 {
+  font-size: 1.05rem !important;
+  margin-top: 0.6rem !important;
+  margin-bottom: 0.25rem !important;
+  color: #0f172a !important;
+}
+
+.slidev-layout p {
+  margin-top: 0.35rem !important;
+  margin-bottom: 0.35rem !important;
+  line-height: 1.35 !important;
+}
+
+.slidev-layout td,
+.slidev-layout th {
+  padding: 0.38rem 0.5rem !important;
+}
+
+.slidev-layout pre {
+  padding: 0.55rem !important;
+  font-size: 0.62rem !important;
+  line-height: 1.18 !important;
+}
+
+/* Accent rule under every slide title */
+.slidev-layout h1::after {
+  content: "";
+  display: block;
+  width: 3.25rem;
+  height: 3px;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #0d9488, #6366f1);
+}
+
+/* Section dividers and the title slide carry no rule */
+.slidev-layout.text-center h1::after {
+  display: none;
+}
